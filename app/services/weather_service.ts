@@ -11,6 +11,7 @@ export default class WeatherService {
       const weatherImg = weatherData.data.weather[0].icon
       const tempCelsius = weatherData.data.main.temp
       const weatherDescription = weatherData.data.weather[0].description
+      console.log(weatherImg)
       return { weatherImg, tempCelsius, weatherDescription }
     } catch (error) {
       if (error.response) {
